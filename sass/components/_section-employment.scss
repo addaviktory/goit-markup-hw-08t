@@ -1,0 +1,23 @@
+.employment {
+  padding-bottom: 94px;
+}
+.employment-photo {
+  display: flex;
+  gap: 30px;
+  position: relative;
+
+  .photo__text {
+    background-color: var(--photo-text-color);
+    width: 370px;
+    height: 70px;
+    position: absolute;
+    top: 224px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-white);
+    @extend %flex-center;
+  }
+}

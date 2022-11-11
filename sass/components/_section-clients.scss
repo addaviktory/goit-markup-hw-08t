@@ -1,0 +1,43 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  gap: 30px;
+
+  .clients__link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--soc-icon);
+    border-radius: 4px;
+    @extend %flex-center;
+    @extend %transition;
+
+    &:hover,
+    &:focus {
+      border: 1px solid var(--icon-background-blue);
+    }
+    &:focus .clients__icon,
+    &:hover .clients__icon {
+      fill: var(--icon-background-blue);
+    }
+  }
+  .clients__icon {
+    fill: var(--soc-icon);
+    @extend %transition;
+    &:hover,
+    &:focus {
+      fill: var(--icon-background-blue);
+    }
+  }
+}

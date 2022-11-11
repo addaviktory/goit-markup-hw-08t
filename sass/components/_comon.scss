@@ -1,0 +1,22 @@
+.text-title {
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.text-description {
+  color: var(--description-gray);
+  font-size: 14px;
+  line-height: 1.71;
+  margin-top: 10px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.disable-scroll {
+  overflow: hidden;
+}
