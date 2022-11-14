@@ -1,5 +1,10 @@
 .employment {
-  padding-bottom: 94px;
+  display: none;
+   @media (min-width: 768px){
+    display: block;
+    padding-bottom: 94px;
+   }
+  
 }
 .employment-photo {
   display: flex;

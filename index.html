@@ -66,7 +66,7 @@
         </div>
       </section>
       <!-- section2 -->
-      <!-- <section class="advantage">
+      <section class="advantage">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="block-style advantage-list">
@@ -119,9 +119,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- section3 -->
-      <!-- <section class="employment">
+      <section class="employment">
         <div class="container">
           <h2 class="text-title">Чим ми займаємося</h2>
           <ul class="block-style employment-photo">
@@ -151,18 +151,26 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- section4 -->
-      <!-- <section class="team">
+      <section class="team">
         <div class="container">
           <h2 class="text-title">Наша команда</h2>
           <ul class="block-style team-list">
             <li class="team__item">
-              <img
+              <picture>
+                <source media="(max-width: 480px)"
+                srcset="./images/section4/product-designer.jpg 1x, ./images/section4/product-designer@2x.jpg 2x"
+                src="./images/section4/product-designer.jpg"
+                alt="Фото дизайнера продукту">
+                <img
+                srcset="./images/section4/product-designer.jpg 1x, ./images/section4/product-designer@2x.jpg 2x"
                 src="./images/section4/product-designer.jpg"
                 alt="Фото дизайнера продукту"
-                width="270"
+                width="450"
               />
+              </picture>
+
               <div class="team-content">
                 <h3>Ігор Дем'яненко</h3>
                 <p class="text-description">Product Designer</p>
@@ -199,11 +207,19 @@
               </div>
             </li>
             <li class="team__item">
-              <img
+
+              <picture>
+                <source media="(max-width: 480px)"
+                srcset="./images/section4/fronted-develeper.jpg 1x, ./images/section4/fronted-develeper@2x.jpg 2x"
+                src="./images/section4/fronted-develeper.jpg"
+                alt="Фото фронтед розробника">
+                <img
+                srcset="./images/section4/fronted-develeper.jpg 1x, ./images/section4/fronted-develeper@2x.jpg 2x"
                 src="./images/section4/fronted-develeper.jpg"
                 alt="Фото фронтед розробника"
-                width="270"
+                width="450"
               />
+              </picture>
               <div class="team-content">
                 <h3>Ольга Рєпіна</h3>
                 <p class="text-description">Frontend Developer</p>
@@ -240,11 +256,19 @@
               </div>
             </li>
             <li class="team__item">
-              <img
+
+              <picture>
+                <source media="(max-width: 480px)"
+                srcset="./images/section4/marketing.jpg 1x, ./images/section4/marketing@2x.jpg 2x"
                 src="./images/section4/marketing.jpg"
-                alt="Фото маркетолога"
-                width="270"
-              />
+                alt="Фото маркетолога">
+                <img
+                srcset="./images/section4/marketing.jpg 1x, ./images/section4/marketing@2x.jpg 2x"
+                  src="./images/section4/marketing.jpg"
+                  alt="Фото маркетолога"
+                  width="450"
+                />
+              </picture>
               <div class="team-content">
                 <h3>Микола Тарасов</h3>
                 <p class="text-description">Marketing</p>
@@ -281,11 +305,18 @@
               </div>
             </li>
             <li class="team__item">
-              <img
+              <picture>
+                <source media="(max-width: 480px)"
+                srcset="./images/section4/ui-designer.jpg 1x, ./images/section4/ui-designer@2x.jpg 2x"
+                src="./images/section4/ui-designer.jpg"
+                alt="Фото дизайнера">
+                <img
+                srcset="./images/section4/ui-designer.jpg 1x, ./images/section4/ui-designer@2x.jpg 2x"
                 src="./images/section4/ui-designer.jpg"
                 alt="Фото дизайнера"
-                width="270"
+                width="450"
               />
+              </picture>
               <div class="team-content">
                 <h3>Михайло Єрмаков</h3>
                 <p class="text-description">UI Designer</p>
@@ -323,9 +354,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- section5 -->
-      <!-- <section class="clients">
+      <section class="clients">
         <div class="container">
           <h2 class="clients__title">Постійні клієнти</h2>
           <ul class="clients-list block-style">
@@ -373,10 +404,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-box">
         <div class="address__box">
           <a class="logo" href="./index.html">
@@ -439,8 +470,8 @@
             </li>
           </ul>
         </div>
-        <!-- ---------------------------FOOTER-FORM--------------------------------------------- -->
-        <!-- <form class="footer-form" name="telegram-link">
+      <!-- ---------------------------FOOTER-FORM--------------------------------------------- -->
+        <form class="footer-form" name="telegram-link">
           <p class="footer__subscription">Підпишіться на розсилку</p>
           <div class="link__subscription">
             <input
@@ -458,7 +489,7 @@
           </div>
         </form>
       </div>
-    </footer> --> -->
+    </footer>
     <!-- --------------------------------MODAL----------------------------------------------- -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">

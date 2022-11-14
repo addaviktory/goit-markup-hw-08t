@@ -4,11 +4,22 @@
   padding-top: 60px;
 }
 .footer-box {
+
+@media(min-width: 480px) {
   display: flex;
   align-items: baseline;
 }
+  
+}
 .address__box {
-  margin-right: 70px;
+  text-align: center;
+  margin-bottom: 60px;
+  @media(min-width: 480px){
+    margin-right: 70px;
+    margin-bottom: 0;
+    text-align: inherit;
+  }
+  
 }
 .address-footer {
   display: block;
@@ -47,6 +58,11 @@
 .item-soc-footer {
   height: 80px;
   gap: 10px;
+  margin-bottom: 60px;
+  @media(min-width: 480px){
+    margin-bottom: 0;
+  }
+  
 
   .soc__title {
     font-weight: 700;
@@ -55,9 +71,14 @@
     letter-spacing: 0.03em;
     color: var(--title-white);
     margin-bottom: 20px;
+    text-align: center;
     text-transform: uppercase;
+    @media(min-width: 480px){
+      text-align: inherit;
+    }
   }
   .soc__footer-list {
+    justify-content: center;
     display: flex;
     gap: 10px;
 

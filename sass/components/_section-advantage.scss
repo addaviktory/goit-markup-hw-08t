@@ -1,29 +1,50 @@
 .advantage {
+  padding-top: 26px;
+  padding-bottom: 26px;
+@media (min-width: 480px) {
   padding-top: 94px;
   padding-bottom: 94px;
-
+}
 }
 .advantage-list {
-  display: flex;
   gap: 30px;
 
+
+  @media (min-width: 480px) {
+    display: flex;
+  }
+
   .advantage__item {
-    width: 270px;
+    width: 100%;
+    margin-bottom: 30px;
+    @media (min-width: 480px) {
+      width: 270px;
+      margin-bottom: 0;
+    }
 
     .advantage__background {
-      width: 270px;
+      width: 100%;
       height: 120px;
       background-color: var(--teamsection-light-white);
       @extend %flex-center;
       border-radius: 4px;
       margin-bottom: 30px;
+
+      @media (min-width: 480px){
+        width: 270px;
+      }
     }
   }
   .advantage__item > h3 {
     font-weight: 700;
+    text-align: center;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    @media (min-width: 480px){
+      text-align: start;
+    }
   }
 }
