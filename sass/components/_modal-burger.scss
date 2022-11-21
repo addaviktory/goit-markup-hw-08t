@@ -17,7 +17,7 @@
     height: 40px;
   }
 }
-
+//  menu
 .burger-menu {
     background-color: var(--title-white);
     width: 100%;
@@ -42,7 +42,6 @@
         border: none;
         cursor: pointer;
         @extend %transition;
-      
         &:hover,
         &:focus {
           fill: var(--blue);
