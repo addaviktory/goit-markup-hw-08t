@@ -48,10 +48,14 @@
           fill: var(--blue);
         }
         .burger__icon-close {
-            width: 11px;
-            height: 11px;
+            width: 19px;
+            height: 19px;
             margin: auto;
-          }
+            &:hover,
+            &:focus {
+            fill: var(--blue);
+            }
+        }
     }
   }
   .menu-nav-mobile {

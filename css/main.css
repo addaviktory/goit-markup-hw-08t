@@ -920,9 +920,12 @@ footer .logo > span:first-child {
   fill: var(--blue);
 }
 .burger-menu .burger-close-button .burger__icon-close {
-  width: 11px;
-  height: 11px;
+  width: 19px;
+  height: 19px;
   margin: auto;
+}
+.burger-menu .burger-close-button .burger__icon-close:hover, .burger-menu .burger-close-button .burger__icon-close:focus {
+  fill: var(--blue);
 }
 
 .menu-nav-mobile {

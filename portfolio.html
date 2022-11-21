@@ -30,7 +30,7 @@
             </li>
           </ul>
         </nav>
-        <button class="nav__burger-menu js-open-menu" type="button">
+        <button class="nav__burger-menu" type="button" id="js-open-menu">
           <svg>
             <use href="./images/icons.svg#icon-mobile-menu"></use>
           </svg>
@@ -395,9 +395,9 @@
         </form>
       </div>
     </footer>
-    <div class="burger-menu modal-hidden js-menu-container">
-      <button class="modal-close-button js-close-menu" type="button">
-        <svg class="icon-close-button">
+    <div class="burger-menu modal-hidden" id="js-menu-container">
+      <button class="burger-close-button" type="button" id="js-close-menu">
+        <svg class="burger__icon-close">
           <use href="./images/icons.svg#icon-close-button"></use>
         </svg>
       </button>
@@ -420,12 +420,12 @@
         <div class="link-mobile-menu">
           <ul class="block-style">
             <li class="link__mobile-item">
-              <a href="tel:+380961111111"
+              <a class="burger__link-contact" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
             </li>
             <li class="link__mobile-item">
-              <a href="mailto:info@devstudio.com"
+              <a class="burger__link-email" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
