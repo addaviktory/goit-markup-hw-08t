@@ -119,11 +119,16 @@
   .terms-checkbox {
     position: relative;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: var(--description-gray);
     padding-left: 33px;
+
+    @media (min-width: 480px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
 
     &::before {
       position: absolute;

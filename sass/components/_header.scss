@@ -1,13 +1,7 @@
 .header {
   border-bottom: 1px solid var(--border-header);
 }
-.header__container {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  justify-content: space-between;
-  
-}
+
 .header__list {
   display: flex;
 }
@@ -50,25 +44,7 @@
     }
   }
 }
-.nav__burger-menu{
-  position: relative;
-  width: 40px;
-  height: 40px;
-  display: none;
-  background-color: var(--title-white);
-    border: none;
 
-  @media screen and (max-width: 481px) {
-    display: block;
-  }
-}
-.nav__burger-menu > svg{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-}
 .contacts {
   display: none;
   gap: 30px;
@@ -76,6 +52,11 @@
 
   @media screen and (min-width: 481px) {
     display: flex;
+  }
+  @media (max-width: 768px) {
+    gap: 10px;
+    margin-left: 0;
+    flex-wrap: wrap;
   }
 
   .header__link {

@@ -28,9 +28,15 @@
 }
 
 .button-list {
-  @extend %flex-center;
+  display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 50px;
+  @media (min-width: 480px){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .border__button {
     font-weight: 500;

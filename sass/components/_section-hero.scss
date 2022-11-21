@@ -7,15 +7,15 @@
     padding: 200px 0;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 1600px;
     text-align: center;
-    // background-color: var(--background-light-black);
   
    @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-size: 100%;
-      padding: 140px 0;
+      padding: 15% 0;
+      min-width: 320px;
       background-position: top;
       background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -23,21 +23,24 @@
       ),
       url(../images/hero@2x.jpg);
   };
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
 }
 .container > h1 {
-  width: 700px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   color: var(--title-white);
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 42px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   border: none;
   
-  @media (min-width: 380px) {
-    max-width: 100%;
-    font-size: 26px;
-    line-height: 42px;
+  @media (min-width: 480px) {
+    max-width: 700px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }

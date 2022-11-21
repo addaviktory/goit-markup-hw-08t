@@ -30,7 +30,7 @@
             </li>
           </ul>
         </nav>
-        <button class="nav__burger-menu" type="button">
+        <button class="nav__burger-menu" type="button" id="js-open-menu">
           <svg>
             <use href="./images/icons.svg#icon-mobile-menu"></use>
           </svg>
@@ -159,16 +159,24 @@
           <ul class="block-style team-list">
             <li class="team__item">
               <picture>
-                <source media="(max-width: 480px)"
-                srcset="./images/section4/product-designer.jpg 1x, ./images/section4/product-designer@2x.jpg 2x"
-                src="./images/section4/product-designer.jpg"
-                alt="Фото дизайнера продукту">
+                <source
+                  media="(max-width: 480px)"
+                  srcset="
+                    ./images/section4/product-designer.jpg    1x,
+                    ./images/section4/product-designer@2x.jpg 2x
+                  "
+                  src="./images/section4/product-designer.jpg"
+                  alt="Фото дизайнера продукту"
+                />
                 <img
-                srcset="./images/section4/product-designer.jpg 1x, ./images/section4/product-designer@2x.jpg 2x"
-                src="./images/section4/product-designer.jpg"
-                alt="Фото дизайнера продукту"
-                width="450"
-              />
+                  srcset="
+                    ./images/section4/product-designer.jpg    1x,
+                    ./images/section4/product-designer@2x.jpg 2x
+                  "
+                  src="./images/section4/product-designer.jpg"
+                  alt="Фото дизайнера продукту"
+                  width="450"
+                />
               </picture>
 
               <div class="team-content">
@@ -207,18 +215,25 @@
               </div>
             </li>
             <li class="team__item">
-
               <picture>
-                <source media="(max-width: 480px)"
-                srcset="./images/section4/fronted-develeper.jpg 1x, ./images/section4/fronted-develeper@2x.jpg 2x"
-                src="./images/section4/fronted-develeper.jpg"
-                alt="Фото фронтед розробника">
+                <source
+                  media="(max-width: 480px)"
+                  srcset="
+                    ./images/section4/fronted-develeper.jpg    1x,
+                    ./images/section4/fronted-develeper@2x.jpg 2x
+                  "
+                  src="./images/section4/fronted-develeper.jpg"
+                  alt="Фото фронтед розробника"
+                />
                 <img
-                srcset="./images/section4/fronted-develeper.jpg 1x, ./images/section4/fronted-develeper@2x.jpg 2x"
-                src="./images/section4/fronted-develeper.jpg"
-                alt="Фото фронтед розробника"
-                width="450"
-              />
+                  srcset="
+                    ./images/section4/fronted-develeper.jpg    1x,
+                    ./images/section4/fronted-develeper@2x.jpg 2x
+                  "
+                  src="./images/section4/fronted-develeper.jpg"
+                  alt="Фото фронтед розробника"
+                  width="450"
+                />
               </picture>
               <div class="team-content">
                 <h3>Ольга Рєпіна</h3>
@@ -256,14 +271,21 @@
               </div>
             </li>
             <li class="team__item">
-
               <picture>
-                <source media="(max-width: 480px)"
-                srcset="./images/section4/marketing.jpg 1x, ./images/section4/marketing@2x.jpg 2x"
-                src="./images/section4/marketing.jpg"
-                alt="Фото маркетолога">
+                <source
+                  media="(max-width: 480px)"
+                  srcset="
+                    ./images/section4/marketing.jpg    1x,
+                    ./images/section4/marketing@2x.jpg 2x
+                  "
+                  src="./images/section4/marketing.jpg"
+                  alt="Фото маркетолога"
+                />
                 <img
-                srcset="./images/section4/marketing.jpg 1x, ./images/section4/marketing@2x.jpg 2x"
+                  srcset="
+                    ./images/section4/marketing.jpg    1x,
+                    ./images/section4/marketing@2x.jpg 2x
+                  "
                   src="./images/section4/marketing.jpg"
                   alt="Фото маркетолога"
                   width="450"
@@ -306,16 +328,24 @@
             </li>
             <li class="team__item">
               <picture>
-                <source media="(max-width: 480px)"
-                srcset="./images/section4/ui-designer.jpg 1x, ./images/section4/ui-designer@2x.jpg 2x"
-                src="./images/section4/ui-designer.jpg"
-                alt="Фото дизайнера">
+                <source
+                  media="(max-width: 480px)"
+                  srcset="
+                    ./images/section4/ui-designer.jpg    1x,
+                    ./images/section4/ui-designer@2x.jpg 2x
+                  "
+                  src="./images/section4/ui-designer.jpg"
+                  alt="Фото дизайнера"
+                />
                 <img
-                srcset="./images/section4/ui-designer.jpg 1x, ./images/section4/ui-designer@2x.jpg 2x"
-                src="./images/section4/ui-designer.jpg"
-                alt="Фото дизайнера"
-                width="450"
-              />
+                  srcset="
+                    ./images/section4/ui-designer.jpg    1x,
+                    ./images/section4/ui-designer@2x.jpg 2x
+                  "
+                  src="./images/section4/ui-designer.jpg"
+                  alt="Фото дизайнера"
+                  width="450"
+                />
               </picture>
               <div class="team-content">
                 <h3>Михайло Єрмаков</h3>
@@ -470,7 +500,7 @@
             </li>
           </ul>
         </div>
-      <!-- ---------------------------FOOTER-FORM--------------------------------------------- -->
+        <!-- ---------------------------FOOTER-FORM--------------------------------------------- -->
         <form class="footer-form" name="telegram-link">
           <p class="footer__subscription">Підпишіться на розсилку</p>
           <div class="link__subscription">
@@ -565,6 +595,58 @@
             <button class="button-submit-info" type="submit">Відправити</button>
           </div>
         </form>
+      </div>
+    </div>
+    <div class="burger-menu modal-hidden" id="js-menu-container">
+      <button class="burger-close-button" type="button" id="js-close-menu">
+        <svg class="burger__icon-close">
+          <use href="./images/icons.svg#icon-close-button"></use>
+        </svg>
+      </button>
+      <div class="container-mobile">
+        <div class="menu-mobile">
+          <nav>
+            <ul class="block-style menu-nav-mobile">
+              <li>
+                <a class="nav__link-mobile active" href="./index.html">Студія</a>
+              </li>
+              <li>
+                <a class="nav__link-mobile" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li>
+                <a class="nav__link-mobile" href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="link-mobile-menu">
+          <ul class="block-style">
+            <li class="link__mobile-item">
+              <a class="burger__link-contact" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="link__mobile-item">
+              <a class="burger__link-email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="block-style soc-item-mobile">
+            <li>
+              <a class="soc__link-mobile" href="">Instagram</a>
+            </li>
+            <li>
+              <a class="soc__link-mobile" href="">Twitter</a>
+            </li>
+            <li>
+              <a class="soc__link-mobile" href="">Facebook</a>
+            </li>
+            <li>
+              <a class="soc__link-mobile" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <script src="./js/mobile-menu.js"></script>
