@@ -3,30 +3,77 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero.jpg);
-    padding: 200px 0;
+    url(../images/hero/hero-mobile.jpg);
+    padding: 15% 0;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1600px;
+    background-size: 100%;
     text-align: center;
-  
-   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-size: 100%;
-      padding: 15% 0;
-      min-width: 320px;
-      background-position: top;
-      background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/hero@2x.jpg);
-  };
-  @media (min-width: 768px) {
-    max-width: 768px;
+    min-width: 480px;
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero-mobile@2x.jpg);
   }
 }
+
+@media (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+  url(../images/hero/hero-tablet.jpg);
+  max-width: 768px;
+  min-width: 481px;
+  padding: 10%;
+  }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero-tablet@2x.jpg);
+    max-width: 768px;
+    min-width: 481px;
+    padding: 10%;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+  url(../images/hero/hero-desktop.jpg);
+  padding: 200px 0;
+  min-width: 1600px;
+  }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero-desktop@2x.jpg);
+    padding: 200px 0;
+    min-width: 1600px;
+    }
+  }
+}
+
 .container > h1 {
   width: 100%;
   margin-left: auto;
@@ -38,9 +85,10 @@
   letter-spacing: 0.06em;
   border: none;
   
-  @media (min-width: 480px) {
-    max-width: 700px;
+  @media (min-width: 768px){
     font-size: 44px;
-    line-height: 1.36;
+    line-height: 60px;
+    width: 50%;
   }
+  
 }

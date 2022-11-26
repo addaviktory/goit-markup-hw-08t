@@ -8,6 +8,12 @@
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.03em;
+    
+    @media (min-width: 480px) {
+      padding-left: 40px;
+      padding-right: 40px;
+      width: 100%;
+    }
   }
 }
 .modal-main {

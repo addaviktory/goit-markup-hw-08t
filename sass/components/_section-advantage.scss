@@ -2,6 +2,10 @@
   padding-top: 26px;
   padding-bottom: 26px;
 @media (min-width: 480px) {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 768px) {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -9,18 +13,27 @@
 .advantage-list {
   gap: 30px;
 
-
   @media (min-width: 480px) {
     display: flex;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: nowrap;
   }
 
   .advantage__item {
     width: 100%;
     margin-bottom: 30px;
     @media (min-width: 480px) {
+      width: calc((100% - 30px)/2);
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
       width: 270px;
       margin-bottom: 0;
     }
+
 
     .advantage__background {
       width: 100%;
@@ -30,7 +43,7 @@
       border-radius: 4px;
       margin-bottom: 30px;
 
-      @media (min-width: 480px){
+      @media (min-width: 768px){
         width: 270px;
       }
     }

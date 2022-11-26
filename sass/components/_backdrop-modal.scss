@@ -20,6 +20,9 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   @media (min-width: 480px) {
+    width: 70%;
+  }
+  @media (min-width: 768px) {
     width: 528px;
   }
 }

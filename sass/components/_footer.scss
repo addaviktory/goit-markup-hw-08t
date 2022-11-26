@@ -8,13 +8,21 @@
 @media(min-width: 480px) {
   display: flex;
   align-items: baseline;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media(min-width: 768px) {
+  display: flex;
+  align-items: baseline;
+  padding: 0;
 }
   
 }
 .address__box {
   text-align: center;
   margin-bottom: 60px;
-  @media(min-width: 480px){
+
+  @media (min-width: 768px) {
     margin-right: 70px;
     margin-bottom: 0;
     text-align: inherit;
@@ -73,7 +81,7 @@
     margin-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
-    @media(min-width: 480px){
+    @media(min-width: 768px){
       text-align: inherit;
     }
   }
