@@ -1,8 +1,13 @@
 .proposition-items {
-  @extend %flex-center;
+  align-items: center;
+  display: grid;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
   padding-bottom: 96px;
+  @media (min-width: 768px) {
+    display: flex;
+  }
 
   .portfolio__card {
     text-decoration: none;

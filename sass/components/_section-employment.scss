@@ -1,6 +1,6 @@
 .employment {
   display: none;
-   @media (min-width: 768px){
+   @media (min-width: 1200px){
     display: block;
     padding-bottom: 94px;
    }
@@ -23,6 +23,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-white);
-    @extend %flex-center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

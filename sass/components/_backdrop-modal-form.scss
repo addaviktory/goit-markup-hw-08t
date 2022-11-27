@@ -9,7 +9,7 @@
     line-height: 23px;
     letter-spacing: 0.03em;
     
-    @media (min-width: 480px) {
+    @media (min-width: 768px) {
       padding-left: 40px;
       padding-right: 40px;
       width: 100%;
@@ -129,9 +129,9 @@
     line-height: 14px;
     letter-spacing: 0.03em;
     color: var(--description-gray);
-    padding-left: 33px;
-
-    @media (min-width: 480px) {
+    padding-left: 20px;
+    
+    @media (min-width: 768px) {
       font-size: 14px;
       line-height: 24px;
     }
@@ -139,27 +139,35 @@
     &::before {
       position: absolute;
       content: "";
-      top: 50%;
+      top: 20%;
       transform: translateY(-50%);
-      left: 13px;
+      left: 0;
       width: 16px;
       height: 15px;
       border: 2px solid var(--black-text);
       border-radius: 2px;
       @extend %transition;
+      @media (min-width: 443px) {
+        top: 50%;
+        left: 0px;
+      }
     }
     &::after {
       position: absolute;
       content: "";
-      top: 50%;
+      top: 20%;
       transform: translateY(-50%);
-      left: 13px;
+      left: 0;
       width: 16px;
       height: 15px;
       background-color: var(--blue);
       border-radius: 2px;
       @extend %transition;
       opacity: 0;
+      @media (min-width: 443px) {
+        top: 50%;
+        left: 0px;
+      }
     }
     & > a {
       color: var(--blue);
@@ -168,12 +176,15 @@
       width: 11px;
       height: 8px;
       position: absolute;
-      left: 16px;
-      top: 50%;
+      left: 3px;
+      top: 20%;
       transform: translateY(-50%);
       fill: var(--title-white);
       z-index: 1;
       cursor: pointer;
+      @media (min-width: 443px) {
+        top: 50%;
+      }
     }
     &:focus > svg {
       background-color: var(--blue);

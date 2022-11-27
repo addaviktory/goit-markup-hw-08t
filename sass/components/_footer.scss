@@ -5,14 +5,15 @@
 }
 .footer-box {
 
-@media(min-width: 480px) {
+@media(min-width: 768px) {
   display: flex;
   align-items: baseline;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-@media(min-width: 768px) {
+@media(min-width: 1200px) {
   display: flex;
+  flex-wrap: nowrap;
   align-items: baseline;
   padding: 0;
 }
@@ -22,7 +23,7 @@
   text-align: center;
   margin-bottom: 60px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     margin-right: 70px;
     margin-bottom: 0;
     text-align: inherit;
@@ -67,7 +68,7 @@
   height: 80px;
   gap: 10px;
   margin-bottom: 60px;
-  @media(min-width: 480px){
+  @media(min-width: 768px){
     margin-bottom: 0;
   }
   
@@ -81,7 +82,7 @@
     margin-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
-    @media(min-width: 768px){
+    @media(min-width: 1200px){
       text-align: inherit;
     }
   }
@@ -96,7 +97,9 @@
       border-radius: 50%;
       background-color: var(--net-link-footer-buckground);
       transition-property: background-color;
-      @extend %flex-center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       @extend %transition;
 
       &:hover,
