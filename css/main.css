@@ -953,13 +953,13 @@ footer .logo > span:first-child {
   position: relative;
   width: 40px;
   height: 40px;
-  display: none;
+  display: block;
   background-color: var(--title-white);
   border: none;
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) {
   .nav__burger-menu {
-    display: block;
+    display: none;
   }
 }
 .nav__burger-menu > svg {
@@ -978,8 +978,6 @@ footer .logo > span:first-child {
   top: 0;
   left: 0;
   z-index: 9999;
-  -webkit-transition: opacity 250ms cubic-bezier(0.5, 0, 0.5, 1), visibility 250ms cubic-bezier(0.5, 0, 0.5, 1);
-  transition: opacity 250ms cubic-bezier(0.5, 0, 0.5, 1), visibility 250ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 .burger-menu .burger-close-button {
   position: absolute;
@@ -1017,7 +1015,7 @@ footer .logo > span:first-child {
 .menu-nav-mobile > li {
   margin-top: 32px;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .menu-nav-mobile {
     display: none;
   }
@@ -1459,9 +1457,15 @@ footer .logo > span:first-child {
   letter-spacing: 0.06em;
   border: none;
 }
+@media (min-width: 768px) {
+  .container > h1 {
+    width: 90%;
+    min-width: 360px;
+    padding: 0 200px;
+  }
+}
 @media (min-width: 1200px) {
   .container > h1 {
-    width: 700px;
     font-size: 44px;
     line-height: 60px;
   }
