@@ -4,13 +4,13 @@
   min-width: 320px;
   padding-right: 15px;
   @media (min-width: 480px)  {
-    min-width: 480px;
+    max-width: 480px;
   }
   @media (min-width: 768px)  {
-    min-width: 768px;
+    max-width: 768px;
   }
   @media (min-width: 1200px)  {
-    width: 1200px;
+    max-width: 1200px;
   }
   }
 
@@ -23,8 +23,13 @@
     align-items: center;
     gap: 50px;
     justify-content: space-between;
+    max-width: 768px;
     @media (max-width: 768px) {
       margin: 0;
     }
+    @media (min-width: 1200px) {
+      max-width: 1200px;
+    }
+    
     
   }

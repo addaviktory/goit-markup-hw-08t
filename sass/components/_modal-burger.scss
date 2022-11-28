@@ -100,18 +100,24 @@
         .burger__link-contact{
             text-decoration: none;
             font-weight: 500;
-            font-size: 34px;
+            font-size: 26px;
             line-height: 40px;
             letter-spacing: 0.02em;
             color: var(--blue);
+            @media (min-width: 480px) {
+              font-size: 34px;
+            }
           }
           .burger__link-email{
             text-decoration: none;
             font-weight: 500;
-            font-size: 24px;
+            font-size: 18px;
             line-height: 28px;
             letter-spacing: 0.02em;
             color: var(--description-gray);
+            @media (min-width: 480px) {
+              font-size: 24px;
+            }
           }
           
     }
@@ -135,11 +141,14 @@
 
         .soc__link-mobile{
         font-weight: 500;
-        font-size: 18px;
+        font-size: 12px;
         line-height: 22px;
         letter-spacing: 0.02em;
         color: var(--blue);
         text-decoration: none;
+        @media (min-width: 480px) {
+          font-size: 18px;
+        }
         & > span{
 
             margin-left: 10px;

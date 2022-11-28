@@ -48,7 +48,7 @@
             </a>
           </li>
         </ul>
-        <button class="nav__burger-menu open__burger" type="button" id="js-open-menu">
+        <button class="nav__burger-menu" type="button" id="js-open-menu">
           <svg>
             <use href="./images/icons.svg#icon-mobile-menu"></use>
           </svg>
@@ -126,27 +126,45 @@
           <h2 class="text-title">Чим ми займаємося</h2>
           <ul class="block-style employment-photo">
             <li>
-              <img
-                src="./images/section3/box1.jpg"
-                alt="Розробник пише код"
-                width="370"
-              />
+              <picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="
+                ./images/section3/box1.jpg 1x, ./images/section3/box1@2x.jpg 2x"
+                  >
+                <img
+                  src="./images/section3/box1.jpg"
+                  alt="Розробник пише код"
+                />
+              </picture>
               <p class="photo__text">Десктопні додатки</p>
             </li>
             <li>
-              <img
-                src="./images/section3/box2.jpg"
-                alt="Піключає телефон до комп'ютера"
-                width="370"
-              />
+              <picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="
+                ./images/section3/box2.jpg 1x, ./images/section3/box2@2x.jpg 2x"
+                  >
+                <img
+                  src="./images/section3/box2.jpg"
+                  alt="Піключає телефон до комп'ютера"
+                />
+              </picture>
               <p class="photo__text">Мобільні додатки</p>
             </li>
             <li>
-              <img
-                src="./images/section3/box3.jpg"
-                alt="Малює на планшеті"
-                width="370"
-              />
+              <picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="
+                ./images/section3/box3.jpg 1x, ./images/section3/box3@2x.jpg 2x"
+                  >
+                <img
+                  src="./images/section3/box3.jpg"
+                  alt="Малює на планшеті"
+                />
+              </picture>
               <p class="photo__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -160,22 +178,22 @@
             <li class="team__item">
               <picture>
                 <source
-                  media="(max-width: 480px)"
+                media="(max-width: 767px)"
                   srcset="
-                    ./images/section4/product-designer.jpg    1x,
-                    ./images/section4/product-designer@2x.jpg 2x
-                  "
-                  src="./images/section4/product-designer.jpg"
-                  alt="Фото дизайнера продукту"
-                />
+                    ./images/section4/product-designer-mobile.jpg 1x, ./images/section4/product-designer-mobile@2x.jpg 2x" 
+                >
+                <source srcset="
+                    ./images/section4/product-designer-tablet.jpg 1x, ./images/section4/product-designer-tablet@2x.jpg 2x"
+                    media="(max-width: 1199px)"
+                >
+                <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/section4/product-designer-desktop.jpg 1x, ./images/section4/product-designer-desktop@2x.jpg 2x"
+                  >
                 <img
-                  srcset="
-                    ./images/section4/product-designer.jpg    1x,
-                    ./images/section4/product-designer@2x.jpg 2x
-                  "
-                  src="./images/section4/product-designer.jpg"
+                  src="./images/section4/product-designer-mobile.jpg"
                   alt="Фото дизайнера продукту"
-                  width="450"
                 />
               </picture>
 
@@ -217,22 +235,22 @@
             <li class="team__item">
               <picture>
                 <source
-                  media="(max-width: 480px)"
+                media="(max-width: 767px)"
                   srcset="
-                    ./images/section4/fronted-develeper.jpg    1x,
-                    ./images/section4/fronted-develeper@2x.jpg 2x
-                  "
-                  src="./images/section4/fronted-develeper.jpg"
-                  alt="Фото фронтед розробника"
-                />
+                    ./images/section4/fronted-develeper-mobile.jpg 1x, ./images/section4/fronted-develeper-mobile@2x.jpg 2x" 
+                >
+                <source srcset="
+                    ./images/section4/fronted-develeper-tablet.jpg 1x, ./images/section4/fronted-develeper-tablet@2x.jpg 2x"
+                    media="(max-width: 1199px)"
+                >
+                <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/section4/fronted-develeper-desktop.jpg 1x, ./images/section4/fronted-develeper-desktop@2x.jpg 2x"
+                  >
                 <img
-                  srcset="
-                    ./images/section4/fronted-develeper.jpg    1x,
-                    ./images/section4/fronted-develeper@2x.jpg 2x
-                  "
-                  src="./images/section4/fronted-develeper.jpg"
-                  alt="Фото фронтед розробника"
-                  width="450"
+                  src="./images/section4/fronted-develeper-mobile.jpg"
+                  alt="Фото дизайнера продукту"
                 />
               </picture>
               <div class="team-content">
@@ -273,22 +291,22 @@
             <li class="team__item">
               <picture>
                 <source
-                  media="(max-width: 480px)"
+                media="(max-width: 767px)"
                   srcset="
-                    ./images/section4/marketing.jpg    1x,
-                    ./images/section4/marketing@2x.jpg 2x
-                  "
-                  src="./images/section4/marketing.jpg"
-                  alt="Фото маркетолога"
-                />
+                    ./images/section4/marketing-mobile.jpg 1x, ./images/section4/marketing-mobile@2x.jpg 2x" 
+                >
+                <source srcset="
+                    ./images/section4/marketing-tablet.jpg 1x, ./images/section4/marketing-tablet@2x.jpg 2x"
+                    media="(max-width: 1199px)"
+                >
+                <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/section4/marketing-desktop.jpg 1x, ./images/section4/marketing-desktop@2x.jpg 2x"
+                  >
                 <img
-                  srcset="
-                    ./images/section4/marketing.jpg    1x,
-                    ./images/section4/marketing@2x.jpg 2x
-                  "
-                  src="./images/section4/marketing.jpg"
-                  alt="Фото маркетолога"
-                  width="450"
+                  src="./images/section4/marketing-mobile.jpg"
+                  alt="Фото дизайнера продукту"
                 />
               </picture>
               <div class="team-content">
@@ -329,22 +347,22 @@
             <li class="team__item">
               <picture>
                 <source
-                  media="(max-width: 480px)"
+                media="(max-width: 767px)"
                   srcset="
-                    ./images/section4/ui-designer.jpg    1x,
-                    ./images/section4/ui-designer@2x.jpg 2x
-                  "
-                  src="./images/section4/ui-designer.jpg"
-                  alt="Фото дизайнера"
-                />
+                    ./images/section4/ui-designer-mobile.jpg 1x, ./images/section4/ui-designer-mobile@2x.jpg 2x" 
+                >
+                <source srcset="
+                    ./images/section4/ui-designer-tablet.jpg 1x, ./images/section4/ui-designer-tablet@2x.jpg 2x"
+                    media="(max-width: 1199px)"
+                >
+                <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/section4/ui-designer-desktop.jpg 1x, ./images/section4/ui-designer-desktop@2x.jpg 2x"
+                  >
                 <img
-                  srcset="
-                    ./images/section4/ui-designer.jpg    1x,
-                    ./images/section4/ui-designer@2x.jpg 2x
-                  "
-                  src="./images/section4/ui-designer.jpg"
-                  alt="Фото дизайнера"
-                  width="450"
+                  src="./images/section4/ui-designer-mobile.jpg"
+                  alt="Фото дизайнера продукту"
                 />
               </picture>
               <div class="team-content">
