@@ -4,7 +4,7 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero/hero-mobile.jpg);
-    padding: 15% 0;
+    padding: 118px 0px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -74,7 +74,6 @@
 }
 
 .container > h1 {
-  width: 70%;
   margin-left: auto;
   margin-right: auto;
   color: var(--title-white);
@@ -83,10 +82,11 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
   border: none;
-  
   @media (min-width: 768px){
     width: 360px;
   }
+  
+
   @media (min-width: 1200px){
     width: 700px;
     font-size: 44px;
